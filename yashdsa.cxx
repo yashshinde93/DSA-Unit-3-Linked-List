@@ -1,13 +1,15 @@
 #include <iostream>
 using namespace std;
 
-struct Node {
+struct Node
+{
     int id;
     string name;
     Node *next;
 };
 
-int main() {
+int main() 
+{
     Node *head = NULL, *temp, *newNode;
 
     for(int i = 0; i < 3; i++) {
@@ -31,7 +33,8 @@ int main() {
     cout << "\nEmployee Records:\n";
     temp = head;
 
-    while(temp != NULL) {
+    while(temp != NULL)
+    {
         cout << "ID: " << temp->id
              << " Name: " << temp->name << endl;
         temp = temp->next;

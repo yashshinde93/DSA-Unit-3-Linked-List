@@ -12,7 +12,8 @@ int main()
 {
     Node *head = NULL, *temp, *newNode;
 
-    for(int i = 0; i < 3; i++) {
+    for(int i = 0; i < 3; i++)
+    {
         newNode = new Node;
 
         cout << "Enter Employee ID and Name: ";
@@ -22,7 +23,8 @@ int main()
 
         if(head == NULL)
             head = newNode;
-        else {
+        else
+        {
             temp = head;
             while(temp->next != NULL)
                 temp = temp->next;
